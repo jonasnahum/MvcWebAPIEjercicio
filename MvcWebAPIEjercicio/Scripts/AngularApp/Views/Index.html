@@ -1,0 +1,48 @@
+﻿<h1>Todos los Alumnos</h1>
+<table data-ng-controller="indexController"><!--se bindea con el modelo ($scope) en el controller indexController-->
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Promedio
+            </th>
+            <th>
+                Grado
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody data-ng-repeat="alumno in alumnos">
+        <tr>
+            <td>{{alumno.id}}</td>
+            <td>{{alumno.nombre}}</td>
+            <td>{{alumno.promedio}}</td>
+            <td>{{alumno.grado}}</td>
+            <td>
+                <a href="#">
+                    Editar
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#">
+                    Borrar
+                </a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">
+                <a href="#">
+                    Crear Alumno
+                </a>
+            </td>
+        </tr>
+    </tfoot>
+</table>

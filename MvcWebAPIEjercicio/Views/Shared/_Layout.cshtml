@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="alumnosApp"> <!--conectar el html al app de angular.-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angularJs")
+    @Scripts.Render("~/bundles/alumnosApp")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
