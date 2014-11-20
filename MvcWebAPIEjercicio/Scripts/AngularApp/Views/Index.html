@@ -26,11 +26,15 @@
             <td>{{alumno.promedio}}</td>
             <td>{{alumno.grado}}</td>
             <td>
-                <a href="#">
+                <a href="#/edit/{{alumno.id}}">
                     Editar
                 </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="#">
+                &nbsp;&nbsp;
+                <a href="#/view/{{alumno.id}}">
+                    Ver
+                </a>
+                &nbsp;&nbsp;
+                <a href="javascript:void(0);" data-ng-click="delete(alumno.id);">
                     Borrar
                 </a>
             </td>
@@ -39,7 +43,7 @@
     <tfoot>
         <tr>
             <td colspan="5">
-                <a href="#">
+                <a href="#/new/">
                     Crear Alumno
                 </a>
             </td>

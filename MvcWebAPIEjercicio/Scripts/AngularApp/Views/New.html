@@ -1,1 +1,14 @@
-﻿
+﻿<div data-ng-controller="newController">    
+    nombre:<input type="text" data-ng-model="alumno.nombre" /><br /> 
+    promedio:<input type="number" data-ng-model="alumno.promedio" /><br />
+    grado: <input type="text" data-ng-model="alumno.grado" /><br />
+
+    <a href="javascript:void(0);" data-ng-click="cancell();">
+        Cancelar
+    </a>
+    &nbsp;&nbsp; 
+    <a href="javascript:void(0);" data-ng-click="save();">
+        Guardar
+    </a>
+    
+</div>

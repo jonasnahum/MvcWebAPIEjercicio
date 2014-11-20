@@ -10,8 +10,8 @@ factories.servicesFactory = function ($http) {//esto equivale al ajax.
     var factory = {};
 
     factory.callService = function (tipo, callback, id, data) {
-        var promise = createRequest(tipo, getUrl(id), data);
-        success(promise, callback);
+        var promise = createRequest(tipo, getUrl(id), data);//crea un request.
+        success(promise, callback);//recibe el resultado de la promesa que se hace al webController y la pone el el callback.
         renderError(promise);
     }
 
@@ -21,12 +21,14 @@ factories.servicesFactory = function ($http) {//esto equivale al ajax.
         });
     }
 
-    function createRequest(tipo, url, data) {        
-        var promise = $http({
-            method: tipo,
+    function createRequest(tipo, url, data) {
+
+        var promise = $http({   //esto equivale al ajax.
+            method: tipo,       //method equivale al tipo GET,POST,PUt, etc.
             url: url,
-            params: data
+            data: data        //equivale al data.
         });
+
         return promise;
     }
 
