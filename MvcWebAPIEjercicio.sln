@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebAPIEjercicio", "MvcWebAPIEjercicio\MvcWebAPIEjercicio.csproj", "{B9B28107-B55A-452E-9749-35CFB861C582}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Tests", "WebApi.Tests\WebApi.Tests.csproj", "{FC462C1A-302A-4DE2-AA75-9378BFA414D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{B9B28107-B55A-452E-9749-35CFB861C582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9B28107-B55A-452E-9749-35CFB861C582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9B28107-B55A-452E-9749-35CFB861C582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC462C1A-302A-4DE2-AA75-9378BFA414D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC462C1A-302A-4DE2-AA75-9378BFA414D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC462C1A-302A-4DE2-AA75-9378BFA414D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC462C1A-302A-4DE2-AA75-9378BFA414D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

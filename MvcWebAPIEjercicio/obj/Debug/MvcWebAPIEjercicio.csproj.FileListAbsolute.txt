@@ -46,3 +46,7 @@ C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\bin\System.
 C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\obj\Debug\MvcWebAPIEjercicio.csprojResolveAssemblyReference.cache
 C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\obj\Debug\MvcWebAPIEjercicio.dll
 C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\obj\Debug\MvcWebAPIEjercicio.pdb
+C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\bin\Castle.Core.dll
+C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\bin\Castle.Windsor.dll
+C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\bin\Castle.Core.xml
+C:\Users\casa\Documents\GitHub\MvcWebAPIEjercicio\MvcWebAPIEjercicio\bin\Castle.Windsor.xml
