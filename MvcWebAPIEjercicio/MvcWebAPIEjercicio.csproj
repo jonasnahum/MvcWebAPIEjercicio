@@ -130,17 +130,22 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
-    <Compile Include="DependencyInjection\Installers\ControllersInstaller.cs" />
-    <Compile Include="DependencyInjection\WindsorControllerFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\alumnoModel.cs" />
     <Compile Include="Models\IDataBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windsor\Factories\WindsorControllerFactory.cs" />
+    <Compile Include="Windsor\Factories\WindsorWebApiControllerFactory.cs" />
+    <Compile Include="Windsor\Installers\AlumnosAppInstaller.cs" />
+    <Compile Include="Windsor\Installers\ControllersInstaller.cs" />
+    <Compile Include="Windsor\Installers\WebApiInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\AlumnosApp\DataBase.xml" />
+    <Content Include="App_Data\AlumnosApp\DataBase.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -202,6 +207,7 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Config\castle.config" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\AngularApp\alumnosApp.js" />
@@ -240,7 +246,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Config\dev\" />
+    <Folder Include="Config\prod\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

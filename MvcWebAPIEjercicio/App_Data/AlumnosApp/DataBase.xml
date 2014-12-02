@@ -18,4 +18,10 @@
     <promedio>1</promedio>
     <grado>ok</grado>
   </alumnoModel>
+  <alumnoModel>
+    <id>4</id>
+    <nombre>Pedro</nombre>
+    <promedio>10</promedio>
+    <grado>10</grado>
+  </alumnoModel>
 </ArrayOfAlumnoModel>

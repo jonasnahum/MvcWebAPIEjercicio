@@ -7,7 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MvcWebAPIEjercicio.DependencyInjection.Installers
+namespace MvcWebAPIEjercicio.Windsor.Installers
 {
     public class ControllersInstaller : IWindsorInstaller
     {

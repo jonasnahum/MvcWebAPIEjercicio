@@ -15,7 +15,7 @@ controllers = {
         servicesFactory.callService("GET", function (alumnos) {//consigue el modelo del web controler con estos parametros.
             $scope.alumnos = alumnos;//este es el callback, lo que se va ejecutar cuando sea exitosa la llamada.
         });
-        function deleteItem(id) {//le pasan el id de $scope.delete
+        function deleteItem(id) {//le pasan el id del metodo $scope.delete
             servicesFactory.callService("DELETE", function () {//este es el tipo, borra.
                 servicesFactory.callService("GET", function (alumnos) {//vuelve a traer los alumnos para actualizarlos
                     $scope.alumnos = alumnos;//.este callback se ejecuta cuando sea exitoso el call .modelo cargado .
@@ -31,9 +31,9 @@ controllers = {
     },
 
     newController: function ($routeParams, $scope, $location, servicesFactory) {//se trata acerca de la vista new. y este controller tiene acceso a los routeParams que son dirrecciones url, al scope que es el modelo y al modulo de servicesFactories que es donde se hacen los request al api controller. y location es el route provider que se encuentra definido en alumnosApp.
-        $scope.alumno = {//este es el modelo? que viene de la vista y se pone el el servicios controller
+        $scope.alumno = {//    AQUI SE CREA UN MODELO. VACIO
             id: 0,
-            nombre: '',//se bindea de la vista as[i:data-ng-model="alumno.nombre" />
+            nombre: '',//se bindea de la vista as[i:data-ng-model="alumno.nombre" /> y as[i:data-ng-controller="newController"
             promedio: 0.0,
             grado: ''
         };

@@ -1,11 +1,12 @@
 ﻿using Castle.Windsor;
 using Castle.Windsor.Installer;
-using MvcWebAPIEjercicio.DependencyInjection;
+using MvcWebAPIEjercicio.Windsor.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Dispatcher;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -25,17 +26,25 @@ namespace MvcWebAPIEjercicio
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
             BootstrapContainer();
         }
         private static IWindsorContainer container;
 
         private static void BootstrapContainer()
         {
-            container = new WindsorContainer()
-                .Install(FromAssembly.This());
+            //create container
+            container = new WindsorContainer();
+
+            //register installers
+            container.Install(FromAssembly.This());
+
+            //create controllers factory
             var controllerFactory = new WindsorControllerFactory(container.Kernel);
             ControllerBuilder.Current.SetControllerFactory(controllerFactory);
+
+            //create web api controllers factory
+            var webApicontrollerFactory = new WindsorWebApiControllerFactory(container);
+            GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerActivator), webApicontrollerFactory);
         }
         protected void Application_End()
         {

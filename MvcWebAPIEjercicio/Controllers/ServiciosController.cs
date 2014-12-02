@@ -8,25 +8,23 @@ using System.Web.Http;
 
 namespace MvcWebAPIEjercicio.Controllers
 {
-    public class ServiciosController : ApiController
+    public class ServiciosController : ApiController//hereda de ApiController.
     {
-        private IDataBase<alumnoModel> mDb;
-        private IDataBase<alumnoModel> Db //lazy loading
+        private XmlModelSerializer<alumnoModel> Db
         {
-            get 
-            {
-                if (mDb == null) 
-                {
-                    mDb = new XmlModelSerializer();
-                }
-                return mDb;
-            }
+            get;
+            set;
+        }
+
+        public ServiciosController(XmlModelSerializer<alumnoModel> db) 
+        {
+            this.Db = db;
         }
 
         // GET api/servicios
         public IEnumerable<alumnoModel> Get()
         {
-            return Db.Get();
+            return Db.Get();//accesa a las propiedades de la clase  XmlModelSerializer() a travez de su objeto Db., que tambien hereda de la interface IDataBase.
         }
 
         // GET api/servicios/5
@@ -36,7 +34,7 @@ namespace MvcWebAPIEjercicio.Controllers
         }
 
         // POST api/servicios        
-        public void Post([FromBody]alumnoModel value)//recibe un objeto de tipo alumnoModel
+        public void Post([FromBody]alumnoModel value)//[FromBody] es lo que viene del request en el data.que esta en controllers.js...recibe un objeto de tipo alumnoModel
         {
             Db.Save(value);
         }
