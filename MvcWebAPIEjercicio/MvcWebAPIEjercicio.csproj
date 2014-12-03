@@ -207,7 +207,9 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Config\castle.config" />
+    <Content Include="Config\castle.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\AngularApp\alumnosApp.js" />

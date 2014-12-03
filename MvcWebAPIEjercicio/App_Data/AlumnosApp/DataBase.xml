@@ -1,27 +1,2 @@
 <?xml version="1.0"?>
-<ArrayOfAlumnoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <alumnoModel>
-    <id>1</id>
-    <nombre>Rodrgio</nombre>
-    <promedio>8</promedio>
-    <grado>1b</grado>
-  </alumnoModel>
-  <alumnoModel>
-    <id>2</id>
-    <nombre>Jonas</nombre>
-    <promedio>9</promedio>
-    <grado>3a</grado>
-  </alumnoModel>
-  <alumnoModel>
-    <id>3</id>
-    <nombre>ok</nombre>
-    <promedio>1</promedio>
-    <grado>ok</grado>
-  </alumnoModel>
-  <alumnoModel>
-    <id>4</id>
-    <nombre>Pedro</nombre>
-    <promedio>10</promedio>
-    <grado>10</grado>
-  </alumnoModel>
-</ArrayOfAlumnoModel>
+<ArrayOfAlumnoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />

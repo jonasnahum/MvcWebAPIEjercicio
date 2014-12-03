@@ -16,7 +16,7 @@ namespace MvcWebAPIEjercicio.Models
 
 
     public class XmlModelSerializer<T> : IDataBase<T> where T : class, IAlumnoModel
-        //serializador de modelo.se manda el tipo alumnoModel a la interface, cumple con contrato.
+    //serializador de modelo.se manda el tipo alumnoModel a la interface, cumple con contrato.
     {
         /*
            <?xml version="1.0" encoding="utf-16"?>
@@ -101,14 +101,10 @@ namespace MvcWebAPIEjercicio.Models
             SaveToFile();//se manda SERIALIZAR lo que hay en mAlumnos, que es la variable privada que corresponde a la variable publica.
         }
 
-        public void Init(IKernel kernel, Castle.Core.Configuration.IConfiguration facilityConfig)
+        public void CleanDataBase() 
         {
-            //
-        }
-
-        public void Terminate()
-        {
-            //
+            Alumnos.Clear();
+            SaveToFile();
         }
     }
 }
