@@ -19,7 +19,7 @@ namespace WebApi.Tests
             Servicios = new ServiciosController(Db);
         }
         
-        [TestInitialize]//carga estos metodos primero.
+        [TestInitialize]//carga estos metodos primero antes de hacer los test.
         public void CreateEmptyDatabase() 
         {
             Db.CleanDataBase();
@@ -84,8 +84,8 @@ namespace WebApi.Tests
             model.grado = grado;
             model.nombre = nombre;
             model.promedio = promedio;
-            Servicios.Put(id, model);
-            alumnoModel afterUpdate = Servicios.Get(id);
+            Servicios.Put(id, model);//se ejecuta el metodo put.
+            alumnoModel afterUpdate = Servicios.Get(id);//se crea otro modelo y se manda traer el los datos del que se hizo model. porque si llamamos
 
             //assert
             Assert.AreEqual(grado, afterUpdate.grado);
@@ -104,10 +104,10 @@ namespace WebApi.Tests
 
             //act
             Servicios.Delete(id);
-            alumnoModel alumnoVacio = Servicios.Get(id);
+            alumnoModel alumnoNull= Servicios.Get(id);
             
             //assert
-            Assert.IsNull(alumnoVacio);            
+            Assert.IsNull(alumnoNull);//como no existe, entonces es null.            
         }
     }
 }

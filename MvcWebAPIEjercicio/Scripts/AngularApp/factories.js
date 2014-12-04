@@ -6,16 +6,16 @@ function getUrl(id) {
     return url + id;
 }
 
-factories.servicesFactory = function ($http) {//este metodo solo tiene factory y factory solo tiene callService., y regresa factory.
+factories.servicesFactory = function ($http) {//este metodo solo tiene factory y factory solo tiene callService., y regresa y al ultimo, aquel metodo regresa factory.
     var factory = {};//se crea un objeto vacio
 
-    factory.callService = function (tipo, callback, id, data) {//se agrega una propiedad callService que es igual a un metodo.
+    factory.callService = function (tipo, callback, id, data) {//se agrega una propiedad callService al que era un objeto vacío que es igual a un metodo.
         var promise = createRequest(tipo, getUrl(id), data);//crea un request.
         success(promise, callback);//recibe el resultado de la promesa que se hace al webController y la pone el el callback.
         renderError(promise);
     }
 
-    function renderError(promise) {//metodo
+    function renderError(promise) {//metodo privado.
         promise.error(function (data, status, headers, config) {
             $("body").html(data.MessageDetail);
         });

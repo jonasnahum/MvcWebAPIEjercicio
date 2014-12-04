@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@section scripts{    
+    @Styles.Render("~/Content/qunitCss")
+    @Scripts.Render("~/bundles/qunitJs")
+    @Scripts.Render("~/bundles/utils")
+    @Scripts.Render("~/bundles/utilsTest")
+}
+
+<h1 id="qunit-header">Utils Test</h1>
+<h2 id="qunit-banner"></h2>
+<div id="qunit-testrunner-toolbar"></div>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests"></ol>
+<div id="qunit-fixture">test makeup, will be hidden</div>

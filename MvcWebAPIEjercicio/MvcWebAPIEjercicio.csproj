@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UtilsTestController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -146,6 +147,7 @@
     <Content Include="App_Data\AlumnosApp\DataBase.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Content\qunit-1.14.0.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -231,6 +233,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\qunit-1.14.0.js" />
+    <Content Include="Scripts\UtilsTest\RequestTest.js" />
+    <Content Include="Scripts\Utils\Request.js" />
+    <Content Include="Scripts\Utils\Url.js" />
+    <Content Include="Scripts\UtilsTest\UrlTest.js" />
     <Content Include="Views\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\ServiceCalls.js" />
@@ -247,6 +254,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\UtilsTest\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\dev\" />
@@ -271,7 +279,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>22615</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:15618/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
