@@ -2,16 +2,15 @@
     ViewBag.Title = "Index";
 }
 
-@section scripts{    
-    @Styles.Render("~/Content/qunitCss")
-    @Scripts.Render("~/bundles/qunitJs")
-    @Scripts.Render("~/bundles/utils")
-    @Scripts.Render("~/bundles/utilsTest")
-}
+@section scripts {    
 
-<h1 id="qunit-header">Utils Test</h1>
-<h2 id="qunit-banner"></h2>
-<div id="qunit-testrunner-toolbar"></div>
-<h2 id="qunit-userAgent"></h2>
-<ol id="qunit-tests"></ol>
-<div id="qunit-fixture">test makeup, will be hidden</div>
+    <link rel="shortcut icon" type="image/png" href="@Url.Content("~/Scripts/jasmine/lib/jasmine-2.0.0/jasmine_favicon.png")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/jasmine/lib/jasmine-2.0.0/jasmine.css")"> 
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jasmine/lib/jasmine-2.0.0/jasmine.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jasmine/lib/jasmine-2.0.0/jasmine-html.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jasmine/lib/jasmine-2.0.0/boot.js")"></script>
+    
+    @Scripts.Render("~/bundles/modules")
+    @Scripts.Render("~/bundles/modulesTest")
+}

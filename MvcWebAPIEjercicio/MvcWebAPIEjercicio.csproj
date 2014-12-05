@@ -212,6 +212,7 @@
     <Content Include="Config\castle.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Scripts\jasmine\MIT.LICENSE" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\AngularApp\alumnosApp.js" />
@@ -221,6 +222,17 @@
     <Content Include="Scripts\AngularApp\Views\Index.html" />
     <Content Include="Scripts\AngularApp\Views\New.html" />
     <Content Include="Scripts\AngularApp\Views\View.html" />
+    <Content Include="Scripts\jasmine\lib\jasmine-2.0.0\boot.js" />
+    <Content Include="Scripts\jasmine\lib\jasmine-2.0.0\console.js" />
+    <Content Include="Scripts\jasmine\lib\jasmine-2.0.0\jasmine-html.js" />
+    <Content Include="Scripts\jasmine\lib\jasmine-2.0.0\jasmine.css" />
+    <Content Include="Scripts\jasmine\lib\jasmine-2.0.0\jasmine.js" />
+    <Content Include="Scripts\jasmine\lib\jasmine-2.0.0\jasmine_favicon.png" />
+    <Content Include="Scripts\jasmine\SpecRunner.html" />
+    <Content Include="Scripts\jasmine\spec\PlayerSpec.js" />
+    <Content Include="Scripts\jasmine\spec\SpecHelper.js" />
+    <Content Include="Scripts\jasmine\src\Player.js" />
+    <Content Include="Scripts\jasmine\src\Song.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -234,10 +246,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\qunit-1.14.0.js" />
-    <Content Include="Scripts\UtilsTest\RequestTest.js" />
-    <Content Include="Scripts\Utils\Request.js" />
-    <Content Include="Scripts\Utils\Url.js" />
-    <Content Include="Scripts\UtilsTest\UrlTest.js" />
+    <Content Include="Scripts\AngularApp\url.js" />
+    <Content Include="Scripts\ModulesTest\urlTests.js" />
     <Content Include="Views\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\ServiceCalls.js" />

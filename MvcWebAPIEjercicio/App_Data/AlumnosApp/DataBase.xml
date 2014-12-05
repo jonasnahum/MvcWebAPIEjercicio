@@ -1,2 +1,9 @@
 <?xml version="1.0"?>
-<ArrayOfAlumnoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfAlumnoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <alumnoModel>
+    <id>1</id>
+    <nombre>jonas</nombre>
+    <promedio>9</promedio>
+    <grado>1</grado>
+  </alumnoModel>
+</ArrayOfAlumnoModel>

@@ -12,11 +12,11 @@ namespace MvcWebAPIEjercicio
                     "~/Scripts/qunit-1.14.0.js"));
 
 
-            bundles.Add(new ScriptBundle("~/bundles/utils").Include(
-                    "~/Scripts/Utils/*.js"));
+            bundles.Add(new ScriptBundle("~/bundles/modules").Include(
+                    "~/Scripts/AngularApp/*.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/utilsTest").Include(
-                    "~/Scripts/UtilsTest/*.js"));
+            bundles.Add(new ScriptBundle("~/bundles/modulesTest").Include(
+                    "~/Scripts/ModulesTest/*.js"));
 
 
             bundles.Add(new ScriptBundle("~/bundles/angularJs").Include(
@@ -24,6 +24,7 @@ namespace MvcWebAPIEjercicio
                     "~/Scripts/angular-route.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/alumnosApp").Include(//nombre del bundle.
+                    "~/Scripts/AngularApp/url.js",
                     "~/Scripts/AngularApp/factories.js",
                     "~/Scripts/AngularApp/controllers.js",
                     "~/Scripts/AngularApp/alumnosApp.js"));

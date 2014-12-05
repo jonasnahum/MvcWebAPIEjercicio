@@ -1,16 +1,10 @@
-﻿var factories = angular.module('factories', []); //declaramos el modulo factories
-
-function getUrl(id) {
-    var url = "api/Servicios/";
-    id = id || "";
-    return url + id;
-}
+﻿var factories = angular.module('factories', ['url']); //declaramos el modulo factories
 
 factories.servicesFactory = function ($http) {//este metodo solo tiene factory y factory solo tiene callService., y regresa y al ultimo, aquel metodo regresa factory.
     var factory = {};//se crea un objeto vacio
 
     factory.callService = function (tipo, callback, id, data) {//se agrega una propiedad callService al que era un objeto vacío que es igual a un metodo.
-        var promise = createRequest(tipo, getUrl(id), data);//crea un request.
+        var promise = createRequest(tipo, url.webApi(id), data);//crea un request.
         success(promise, callback);//recibe el resultado de la promesa que se hace al webController y la pone el el callback.
         renderError(promise);
     }
